@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://docrdhariparsad.co.za/</loc>
+    <lastmod>2025-05-21</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://docrdhariparsad.co.za/#about</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://docrdhariparsad.co.za/#services</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://docrdhariparsad.co.za/#faq</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://docrdhariparsad.co.za/#locations</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://docrdhariparsad.co.za/#contact</loc>
+    <priority>0.80</priority>
+  </url>
+</urlset>

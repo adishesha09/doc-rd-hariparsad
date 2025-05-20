@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Dr. RD Hariparsad - Expert Orthopaedic Surgeon in Durban, South Africa. Specialising in joint replacement, fracture care, hand surgery, and sports medicine.">
+  <meta name="keywords" content="orthopaedic surgeon Durban, joint replacement, fracture care, hand surgery, sports medicine, back pain treatment, Dr Hariparsad">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Dr. RD Hariparsad | Orthopaedic Surgeon | Durban, South Africa">
+  <meta property="og:description" content="Comprehensive orthopaedic care from Dr. Hariparsad - Expert joint replacement, trauma, and sports medicine specialist in Durban.">
+  <meta property="og:image" content="dr_hariparsad_logo.jpg">
+  <meta property="og:url" content="https://docrdhariparsad.co.za">
+  <title>Dr. RD Hariparsad | Orthopaedic Surgeon | Durban, South Africa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://docrdhariparsad.co.za">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.jpeg" type="image/jpeg">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Dr. RD Hariparsad Orthopaedics",
+      "image": "https://docrdhariparsad.co.za/dr_hariparsad_logo.jpg",
+      "description": "Orthopaedic care specialising in joint replacement, hand surgery, and trauma in Durban, South Africa.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "460 Anton Lembede St, Suite 1521",
+        "addressLocality": "Durban",
+        "addressCountry": "ZA"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+27315368348",
+        "contactType": "Customer Service"
+      },
+      "url": "https://docrdhariparsad.co.za"
+    }
+  </script>
+
+  <style>
+    /* Responsive Design Tweaks for Mobile and Tablet */
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      word-break: break-word;
+    }
+    img, iframe {
+      max-width: 100%;
+      height: auto;
+    }
+    input, textarea, button {
+      font-size: 1rem;
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      .container {
+        padding: 0 1rem;
+      }
+    }
+    @media (max-width: 480px) {
+      body {
+        font-size: 16px;
+      }
+      .btn {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+      }
+    }
+  
+  .about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .profile-img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+
+  .profile-img:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 480px) {
+    .profile-img {
+      width: 220px;
+      height: 220px;
+    }
+
+    .section {
+      padding: 3rem 0;
+    }
+  }
+</style>
+
+  <style>
+    :root {
+      --primary: #0056b3;
+      --primary-dark: #003d82;
+      --secondary: #00a8e8;
+      --accent: #ff6b6b;
+      --light: #f8f9fa;
+      --dark: #212529;
+      --gray: #6c757d;
+      --light-gray: #e9ecef;
+      --success: #28a745;
+      --transition: all 0.3s ease;
+    }
+
+    .loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+  }
+
+    .loading-spinner {
+      width: 80px;
+      height: 80px;
+      position: relative;
+      animation: spin 5.5s linear infinite;
+    }
+
+    .loading-icon {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(0, 86, 179, 0.1);
+      box-shadow: 0 0 20px rgba(0, 86, 179, 0.1);
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .loaded {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.7;
+      color: var(--dark);
+      background-color: var(--light);
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.8rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-align: center;
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 86, 179, 0.2);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--primary);
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    .section {
+      padding: 6rem 0;
+    }
+
+    .section-title {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 3rem;
+      color: var(--primary);
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 50%;
+      height: 4px;
+      background-color: var(--secondary);
+      border-radius: 2px;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-center .section-title::after {
+      left: 25%;
+    }
+
+    /* Header */
+    header {
+      background-color: white;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: var(--transition);
+    }
+
+    header.scrolled {
+      box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .logo-text {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--primary);
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-links li a {
+      color: var(--dark);
+      font-weight: 600;
+      position: relative;
+      padding: 0.5rem 0;
+    }
+
+    .nav-links li a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--primary);
+      transition: var(--transition);
+    }
+
+    .nav-links li a:hover::after {
+      width: 100%;
+    }
+
+    .nav-links li a:hover {
+      color: var(--primary);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--primary);
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      height: 90vh;
+      min-height: 700px;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(rgba(0, 86, 179, 0.7), rgba(0, 56, 117, 0.8)), url('hero.jpeg') no-repeat center center/cover;
+      color: white;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      opacity: 0.9;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+    .accordion-button {
+      padding: 1.25rem 1.5rem;
+      }
+    }   
+
+    /* About */
+    .about {
+      background-color: white;
+    }
+
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    
+    .about-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .about-text h2 {
+      color: var(--primary);
+    }
+
+    .qualifications {
+      margin-top: 2rem;
+    }
+
+    .qualification-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .qualification-icon {
+      color: var(--primary);
+      font-size: 1.5rem;
+      margin-top: 0.3rem;
+    }
+
+    /* Services */
+    .services {
+      background-color: var(--light-gray);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: var(--transition);
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 86, 179, 0.1);
+    }
+
+
+    .service-icon {
+      font-size: 3.5rem; /* Larger size for visibility */
+      color: var(--primary); /* Uses your theme's blue */
+      margin-bottom: 1.5rem;
+      display: inline-flex;
+      transition: var(--transition);
+    }
+
+
+    .service-card:hover .service-icon {
+      transform: scale(1.1);
+      color: var(--primary-dark);
+    }
+
+    .service-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    /* FAQ Accordion */
+    .accordion-item {
+      border: none;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 86, 179, 0.05);
+    }
+
+    .accordion-button {
+      background-color: #ffffff;
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 1rem 1.5rem;
+      transition: var(--transition);
+      border: none;
+    }
+
+    .accordion-button:focus {
+      box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+      border-color: transparent;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: var(--light-gray);
+      color: var(--primary-dark);
+    }
+
+    .accordion-body {
+      background-color: #ffffff;
+      color: var(--dark);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      padding: 1.5rem;
+      border-top: 1px solid var(--light-gray);
+    }
+
+    @media (max-width: 768px) {
+      .accordion-button {
+      padding: 1.25rem 1.5rem;
+     }
+    }
+
+    /* Locations */
+    .locations {
+      background-color: white;
+    }
+
+    .locations-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .location-card {
+      background-color: var(--light);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .location-info {
+      padding: 1.5rem;
+    }
+
+    .location-info h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .location-info p {
+      margin-bottom: 0.5rem;
+      color: var(--gray);
+    }
+
+    .map-container {
+      height: 250px;
+      width: 100%;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Contact */
+    .contact {
+      background-color: var(--light-gray);
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+    }
+
+    .contact-info {
+      margin-bottom: 2rem;
+    }
+
+    .contact-info h3 {
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-details {
+      margin-bottom: 2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-icon {
+      color: var(--primary);
+      font-size: 1.2rem;
+      margin-top: 0.2rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: var(--primary);
+      color: white;
+      transition: var(--transition);
+    }
+
+    .social-link:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-3px);
+    }
+
+    .contact-form {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--light-gray);
+      border-radius: 5px;
+      font-family: inherit;
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+    }
+
+    textarea.form-control {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 0.8rem;
+      font-weight: 600;
+    }
+
+    .form-status {
+      margin-top: 1rem;
+      padding: 0.8rem;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .success {
+      background-color: rgba(40, 167, 69, 0.1);
+      color: var(--success);
+    }
+
+    .error {
+      background-color: rgba(220, 53, 69, 0.1);
+      color: #dc3545;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--dark);
+      color: white;
+      padding: 4rem 0 2rem;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-col h3 {
+      color: white;
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.7);
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: white;
+      padding-left: 5px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+    }
+
+    /* Back to top */
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: var(--primary);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: 0 5px 20px rgba(0, 86, 179, 0.3);
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      z-index: 999;
+    }
+
+    .back-to-top.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-3px);
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .hero h1 {
+        font-size: 3rem;
+      }
+      
+      .about-content {
+        grid-template-columns: 1fr;
+      }
+      
+      .about-img {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transition: var(--transition);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      
+      .nav-links.active {
+        left: 0;
+      }
+      
+      .mobile-menu-btn {
+        display: block;
+      }
+      
+      .hero {
+        min-height: 600px;
+      }
+      
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero-btns {
+        flex-direction: column;
+      }
+      
+      .btn {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .section {
+        padding: 4rem 0;
+      }
+      
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <div class="loading-screen">
+    <div class="loading-spinner">
+      <img src="favicon(spinner).jpeg" alt="Loading..." class="loading-icon">
+    </div>
+  </div>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">
+          <img src="dr_hariparsad_logo.jpg" alt="Dr. RD Hariparsad Logo">
+          <span class="logo-text">Dr. RD Hariparsad</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn">
+          <i class="bi bi-list"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+        <h1>Expert Orthopaedic Care in Durban</h1>
+        <p>Specialising in joint replacement, fracture care, and sports medicine with a patient-centred approach to treatment and recovery.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+          <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-img" data-aos="fade-right">
+          <img src="dr_hariparsad_portrait.png" alt="Dr. RD Hariparsad" class="profile-img">
+        </div>
+        <div class="about-text" data-aos="fade-left" data-aos-delay="200">
+          <h2 class="section-title">About Dr. Hariparsad</h2>
+          <p>Dr. Rikesh Dhuneshwar Hariparsad is a distinguished orthopaedic surgeon with over 20 years of experience in musculoskeletal medicine. Born and raised in KwaZulu-Natal, he has dedicated his career to serving communities across South Africa while also gaining valuable international experience in the United Kingdom.</p>
+          
+          <h3 style="color: var(--primary); margin-top: 1.5rem;">Professional Journey</h3>
+          <p>After completing his medical degree at the prestigious University of KwaZulu-Natal in 2000, Dr. Hariparsad pursued specialised training in anaesthetics, earning his Diploma in Anaesthetics (DA) in 2004. This unique background provides him with exceptional insight into pain management techniques that benefit his orthopaedic patients.</p>
+          
+          <p>His passion for musculoskeletal medicine led him to specialise in orthopaedics, where he completed his Higher Diploma in Orthopaedics (H. Dip Orth) in 2011, followed by a Fellowship in Orthopaedics in 2012 from the Colleges of Medicine of South Africa.</p>
+          
+          <h3 style="color: var(--primary); margin-top: 1.5rem;">International and National Experience</h3>
+          <p>Dr. Hariparsad has practiced extensively throughout South Africa, serving diverse communities in both urban and rural settings. His international experience includes working in the United Kingdom's National Health Service (NHS), where he gained exposure to different healthcare systems and advanced surgical techniques.</p>
+          
+          <p>This breadth of experience has not only enhanced his professional expertise but has also enriched his personal understanding of different cultures and healthcare approaches. He brings this global perspective to his practice while maintaining a deep commitment to serving the people of KwaZulu-Natal.</p>
+          
+          <h3 style="color: var(--primary); margin-top: 1.5rem;">Patient-Centred Philosophy</h3>
+          <p>Dr. Hariparsad believes in a holistic approach to orthopaedic care, combining evidence-based medicine with personalised treatment plans informed by his extensive experience. He takes time to educate patients about their conditions and involves them in decision-making about their care.</p>  
+          
+          <div class="qualifications">
+            <div class="qualification-item">
+              <div class="qualification-icon">
+                <i class="bi bi-award"></i>
+              </div>
+              <div>
+                <h4>MBChB (2000)</h4>
+                <p>University of KwaZulu-Natal</p>
+              </div>
+            </div>
+            
+            <div class="qualification-item">
+              <div class="qualification-icon">
+                <i class="bi bi-award"></i>
+              </div>
+              <div>
+                <h4>Diploma in Anaesthetics DA (SA) (2004)</h4>
+                <p>Colleges of Medicine of South Africa</p>
+              </div>
+            </div>
+            
+            <div class="qualification-item">
+              <div class="qualification-icon">
+                <i class="bi bi-award"></i>
+              </div>
+              <div>
+                <h4>Higher Diploma in Orthopaedics H. Dip Orth (2011)</h4>
+                <p>Colleges of Medicine of South Africa</p>
+              </div>
+            </div>
+            
+            <div class="qualification-item">
+              <div class="qualification-icon">
+                <i class="bi bi-award"></i>
+              </div>
+              <div>
+                <h4>Fellowship in Orthopaedics (2012)</h4>
+                <p>Colleges of Medicine of South Africa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <h2 class="section-title">Our Specialised Services</h2>
+        <p>Comprehensive orthopaedic care for all your musculoskeletal needs</p>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Trauma & Fracture Care -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">
+            <span class="material-icons">healing</span>
+          </div>
+          <h3>Trauma & Fracture Care</h3>
+          <p>Expert treatment for fractures and traumatic injuries using the latest surgical and non-surgical techniques.</p>
+        </div>
+        
+        <!-- Hand & Shoulder Surgery -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="service-icon">
+            <span class="material-icons">back_hand</span>
+          </div>
+          <h3>Hand & Shoulder Surgery</h3>
+          <p>Specialised treatment for hand conditions including injuries, arthritis, and carpal tunnel syndrome, as well as shoulder disorders such as rotator cuff tendinitis and recurrent instability (dislocations).</p>
+        </div>
+        
+        <!-- Back Pain & Facet Injections -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon">
+            <span class="material-icons">elderly_woman</span>
+          </div>
+          <h3>Back Pain & Facet Injections</h3>
+          <p>Diagnosis and treatment of back pain including minimally invasive facet joint injections and rhizotomy.</p>
+        </div>
+        
+        <!-- Infection Treatment -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="service-icon">
+            <span class="material-icons">coronavirus</span>
+          </div>
+          <h3>Infection Treatment</h3>
+          <p>Comprehensive management of bone and joint infections with advanced treatment protocols.</p>
+        </div>
+        
+        <!-- Arthroscopy -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon">
+            <span class="material-icons">medical_services</span>
+          </div>
+          <h3>Arthroscopy</h3>
+          <p>Minimally invasive procedures for joint problems including knee, shoulder, and hip arthroscopy.</p>
+        </div>
+        
+        <!-- Sports Medicine -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="service-icon">
+            <span class="material-icons">sports_soccer</span>
+          </div>
+          <h3>Knee & Sports Medicine</h3>
+          <p>Specialised care for sports injuries and athletic performance optimization, with particular expertise in knee-related surgical procedures.</p>
+        </div>
+        
+        <!-- Joint Replacement -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-icon">
+            <span class="material-icons">settings_suggest</span>
+          </div>
+          <h3>Joint Replacement</h3>
+          <p>Advanced hip, knee, and shoulder replacement surgeries using the latest prosthetic technology.</p>
+        </div>
+        
+        <!-- Foot & Ankle -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="450">
+          <div class="service-icon">
+            <span class="material-icons">directions_walk</span>
+          </div>
+          <h3>Foot & Ankle</h3>
+          <p>Comprehensive care for foot and ankle conditions including fractures, arthritis, and deformities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p>Answers to some common questions about our orthopaedic practice</p>
+      </div>
+      <div class="accordion" id="faqAccordion">
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Do I need a referral to book an appointment?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              No referral is necessary. Patients can book directly with our practice by phone or email.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              What should I bring to my consultation?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Please bring your ID, medical aid card, any previous medical records, X-rays, MRIs, or test results relevant to your condition.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Are all treatments surgical?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              No. Many orthopaedic conditions can be managed non-surgically through physical therapy, medication, or injections.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              How long is the typical recovery time after joint replacement surgery?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Recovery times vary depending on the type of joint replacement (hip, knee, or shoulder) and the patient's overall health. Most patients can resume light activities within <strong>a couple of weeks</strong>, while full recovery, including strength and mobility, may take <strong>a couple of months</strong>. Physical therapy is crucial for optimal results, and Dr. Hariparsad will provide a personalised rehabilitation plan.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              What are the non-surgical treatment options for chronic joint pain?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Many conditions can be managed without surgery. Treatment options include:<br><br>
+              - <strong>Physical therapy</strong> (strengthening and mobility exercises)<br>
+              - <strong>Medications</strong> (anti-inflammatories or pain relief)<br>
+              - <strong>Injections</strong> (corticosteroids or hyaluronic acid for lubrication)<br>
+              - <strong>Lifestyle modifications</strong> (weight management, activity adjustments)<br><br>
+              Dr. Hariparsad will recommend the best approach based on your diagnosis.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              How do I know if my injury requires surgery?
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Surgery is typically considered when:<br><br>
+              - Non-surgical treatments fail to relieve pain/instability<br>
+              - The injury significantly impairs daily function (e.g., fractures, torn ligaments)<br>
+              - Imaging (X-rays/MRIs) shows severe damage (e.g., advanced arthritis)<br><br>
+              Dr. Hariparsad will conduct a thorough assessment and discuss all options with you before recommending surgery.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              What should I expect during my first consultation?
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Your first visit will include:<br><br>
+              1. <strong>Medical history review</strong> (previous injuries, surgeries, medications)<br>
+              2. <strong>Physical examination</strong> (range of motion, strength tests)<br>
+              3. <strong>Diagnostic imaging</strong> (if needed: X-rays, MRI, or ultrasound)<br>
+              4. <strong>Personalised treatment plan</strong> (surgical or non-surgical)<br><br>
+              Bring any prior scans, reports, and a list of questions to make the most of your appointment.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              Do you accept medical aid, and what are the payment options?
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="faqEight" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, we accept most major <strong>South African medical aids</strong>. For non-covered services or self-paying patients, we offer:<br><br>
+              - <strong>Payment plans</strong> (structured instalments)<br>
+              - <strong>Hospital cash-back options</strong> (if applicable)<br><br>
+              Our administrative team will assist with pre-authorisations and clarify any financial queries before treatment.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations Section -->
+  <section id="locations" class="section locations">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <h2 class="section-title">Our Practice Locations</h2>
+        <p>Conveniently located clinics serving Durban and surrounding areas</p>
+      </div>
+      
+      <div class="locations-grid">
+        <div class="location-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d31.02345678901234!3d-29.85673456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDUxJzI0LjMiUyAzMcKwMDEnMjkuNiJF!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="location-info">
+            <h3>Durdoc Medical Centre</h3>
+            <p><i class="bi bi-geo-alt"></i> Suite 1521, 15th floor<br>460 Anton Lembede (Smith Street)<br>Durban</p>
+            <p><i class="bi bi-clock"></i> By appointment</p>
+            <a href="https://www.google.com/maps/dir//460+Anton+Lembede+St,+Durban" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+              <i class="bi bi-geo-alt-fill"></i> Get Directions
+            </a>
+          </div>
+        </div>
+        
+        <div class="location-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d31.02345678901234!3d-29.85673456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDUxJzI0LjMiUyAzMcKwMDEnMjkuNiJF!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="location-info">
+            <h3>Parklands Hospital</h3>
+            <p><i class="bi bi-geo-alt"></i> Second Floor Sessional Rooms<br>75 Hopelands Road<br>Essenwood, Durban</p>
+            <p><i class="bi bi-clock"></i> By appointment</p>
+            <a href="https://www.google.com/maps/dir//75+Hopelands+Rd,+Essenwood,+Durban" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+              <i class="bi bi-geo-alt-fill"></i> Get Directions
+            </a>
+          </div>
+        </div>
+        
+        <div class="location-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d31.02345678901234!3d-29.85673456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDUxJzI0LjMiUyAzMcKwMDEnMjkuNiJF!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="location-info">
+            <h3>Ascot Park | Entabeni Hospital</h3>
+            <p><i class="bi bi-geo-alt"></i> 3 Ascot Street<br>Greyville, Durban</p>
+            <p><i class="bi bi-clock"></i> By appointment</p>
+            <a href="https://www.google.com/maps/dir//3+Ascot+St,+Greyville,+Durban" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+              <i class="bi bi-geo-alt-fill"></i> Get Directions
+            </a>
+          </div>
+        </div>
+
+        <div class="location-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d31.02345678901234!3d-29.85673456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDUxJzI0LjMiUyAzMcKwMDEnMjkuNiJF!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="location-info">
+            <h3>Gateway Private Hospital</h3>
+            <p><i class="bi bi-geo-alt"></i> 36-38 Aurora Drive<br>Umhlanga, Durban</p>
+            <p><i class="bi bi-clock"></i> By appointment</p>
+            <a href="https://www.google.com/maps/dir//36-38+Aurora+Dr,+Umhlanga,+Durban" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+              <i class="bi bi-geo-alt-fill"></i> Get Directions
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <h2 class="section-title">Contact Us</h2>
+        <p>Get in touch to schedule an appointment or ask questions</p>
+      </div>
+      
+      <div class="contact-container">
+        <div class="contact-info" data-aos="fade-right">
+          <h3>Contact Information</h3>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:ortho.gateway@gmail.com">ortho.gateway@gmail.com</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:0345368348">031 536 8348</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-clock"></i>
+              </div>
+              <div>
+                <h4>Hours</h4>
+                <p>Monday - Friday: 8:00 AM - 16:30 PM</p>
+              </div>
+            </div>
+          </div>
+          
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100084818524894" class="social-link" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="contact-form" data-aos="fade-left" data-aos-delay="200">
+              <p><strong>Note:</strong> This form uses your device's email application to process this message. If you do not have one configured, the form may not work.</p>
+          <form id="contactForm" action="mailto:ortho.gateway@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+          </form>
+          <div id="formStatus" class="form-status"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Dr. RD Hariparsad</h3>
+          <p>Expert orthopaedic surgeon providing comprehensive musculoskeletal care in Durban, South Africa.</p>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="#services">Trauma & Fracture Care</a></li>
+            <li><a href="#services">Hand & Shoulder Surgery</a></li>
+            <li><a href="#services">Back Pain & Facet Injections</a></li>
+            <li><a href="#services">Infection Treatment</a></li>
+            <li><a href="#services">Arthroscopy</a></li>
+            <li><a href="#services">Sports Medicine</a></li>
+            <li><a href="#services">Joint Replacement</a></li>
+            <li><a href="#services">Foot & Ankle</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:ortho.gateway@gmail.com">ortho.gateway@gmail.com</a></li>
+            <li><a href="tel:0345368348">031 536 8348</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100084818524894" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Dr. RD Hariparsad. All Rights Reserved.</p>
+        <p style="color: var(--gray); font-size: 0.9rem;">
+          Powered by <a href="https://adishesha09.github.io/spectra-studios/" target="_blank" style="color: var(--primary); font-weight: 500; text-decoration: underline;">Spectra Studios</a>
+        </p>
+      </div>
+    </div>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Initialize AOS animations
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+        ? '<i class="bi bi-x-lg"></i>' 
+        : '<i class="bi bi-list"></i>';
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileMenuBtn.innerHTML = '<i class="bi bi-list"></i>';
+      });
+    });
+
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Back to top button
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('active');
+      } else {
+        backToTop.classList.remove('active');
+      }
+    });
+
+    // Contact form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const status = document.getElementById('formStatus');
+      
+      if (!name || !email || !message) {
+        status.textContent = 'Please fill in all required fields.';
+        status.className = 'form-status error';
+        return;
+      }
+      
+      status.textContent = 'Thank you for your message. We will get back to you shortly.';
+      status.className = 'form-status success';
+      this.reset();
+      
+      // Hide the status message after 5 seconds
+      setTimeout(() => {
+        status.textContent = '';
+        status.className = 'form-status';
+      }, 5000);
+    });
+
+    window.addEventListener('load', function() {
+    setTimeout(function() {
+      document.querySelector('.loading-screen').classList.add('loaded');
+    }, 500); 
+  });
+  </script>
+</body>
+</html>
