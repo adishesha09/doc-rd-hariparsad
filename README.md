@@ -48,7 +48,7 @@ To update content:
 3. For major changes, consider version control
 
 ## Credits
-Website developed by [Spectra Studios](https://adishesha09.github.io/spectra-studios/)
+Website developed by [Spectra Studios](https:spectrastudios.co.za/)
 
 ## License
 This website is the property of Dr. RD Hariparsad and Spectra Studios. All content is copyrighted.
