@@ -840,7 +840,7 @@
   </style>
 </head>
 
-<body>
+<body class="loading">
     <div class="loading-screen">
     <div class="loading-spinner">
       <img src="favicon(spinner).webp" alt="Loading..." class="loading-icon">
@@ -1288,43 +1288,38 @@
         </div>
         
         <div class="contact-form" data-aos="fade-left" data-aos-delay="200">
-              <p><strong>Note:</strong> This form uses your device's email application to process this message. If you do not have one configured, the form may not work.</p>
-              <form action="https://formsubmit.co/ortho.gateway@gmail.com" method="POST">
-              <!-- Name -->
-              <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-              </div>
-            
-              <!-- Email -->
-              <div class="form-group">
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com" required>
-              </div>
-            
-              <!-- Phone -->
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="e.g. 031 536 8348" required>
-              </div>
-            
-              <!-- Message -->
-              <div class="form-group">
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
-              </div>
-            
-              <!-- Honeypot field to prevent spam -->
-              <input type="text" name="_honey" style="display:none">
-            
-              <!-- Disable CAPTCHA badge -->
-              <input type="hidden" name="_captcha" value="false">
-          
-              <!-- Submit -->
-              <div class="form-group">
-                <button type="submit">Send Message</button>
-              </div>
-          </form>
+              
+              
+<form id="contactForm" action="https://formsubmit.co/ortho.gateway@gmail.com" method="POST">
+  <div class="form-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+  </div>
+
+  <input type="text" name="_honey" style="display:none">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://docrdhariparsad.co.za/thank-you.html">
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+  </div>
+</form>
+
 
           <div id="formStatus" class="form-status"></div>
         </div>
