@@ -4,11 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="Dr. RD Hariparsad - Expert Orthopaedic Surgeon in Durban, South Africa. Specialising in joint replacement, fracture care, hand surgery, and sports medicine.">
-  <meta name="keywords" content="orthopaedic surgeon Durban, joint replacement, fracture care, hand surgery, sports medicine, back pain treatment, Dr Hariparsad">
+  <meta name="description"
+    content="Dr. RD Hariparsad - Expert Orthopaedic Surgeon in Durban, South Africa. Specialising in joint replacement, fracture care, hand surgery, and sports medicine.">
+  <meta name="keywords"
+    content="orthopaedic surgeon Durban, joint replacement, fracture care, hand surgery, sports medicine, back pain treatment, Dr Hariparsad">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="Dr. RD Hariparsad | Orthopaedic Surgeon | Durban, South Africa">
-  <meta property="og:description" content="Comprehensive orthopaedic care from Dr. Hariparsad - Expert joint replacement, trauma, and sports medicine specialist in Durban.">
+  <meta property="og:description"
+    content="Comprehensive orthopaedic care from Dr. Hariparsad - Expert joint replacement, trauma, and sports medicine specialist in Durban.">
   <meta property="og:image" content="dr_hariparsad_logo.jpg">
   <meta property="og:url" content="https://docrdhariparsad.co.za">
   <meta name="google-site-verification" content="XS-qkrx_IlGUnJozlyibG3B8TIvgkbUIYuIvyZl40B8" />
@@ -23,7 +26,7 @@
   <link rel="canonical" href="https://docrdhariparsad.co.za">
 
   <!-- Favicon -->
-  <link rel="icon" href="favicon_new.ico" type="image/jpeg">
+  <link rel="icon" href="favicon.jpeg" type="image/jpeg">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -56,67 +59,82 @@
       text-rendering: optimizeLegibility;
       word-break: break-word;
     }
-    img, iframe {
+
+    img,
+    iframe {
       max-width: 100%;
       height: auto;
     }
-    input, textarea, button {
+
+    input,
+    textarea,
+    button {
       font-size: 1rem;
     }
+
     @media (max-width: 768px) {
-      h1 { font-size: 2rem; }
-      h2 { font-size: 1.5rem; }
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
       .container {
         padding: 0 1rem;
       }
     }
+
     @media (max-width: 480px) {
       body {
         font-size: 16px;
       }
+
       .btn {
         font-size: 1rem;
         padding: 0.75rem 1.5rem;
       }
     }
-  
-  .about-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-  }
 
-  .profile-img {
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-  }
+    .about-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
 
-  .profile-img:hover {
-    transform: scale(1.05);
-  }
-
-  @media (max-width: 480px) {
     .profile-img {
-      width: 220px;
-      height: 220px;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
     }
 
-    .section {
-      padding: 3rem 0;
+    .profile-img:hover {
+      transform: scale(1.05);
     }
-  }
-</style>
+
+    @media (max-width: 480px) {
+      .profile-img {
+        width: 220px;
+        height: 220px;
+      }
+
+      .section {
+        padding: 3rem 0;
+      }
+    }
+  </style>
 
   <style>
     :root {
       --primary: #0056b3;
       --primary-dark: #003d82;
+      --primary-light: #d6e6f9;
       --secondary: #00a8e8;
       --accent: #ff6b6b;
       --light: #f8f9fa;
@@ -158,8 +176,13 @@
     }
 
     @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
     }
 
     .loaded {
@@ -193,7 +216,10 @@
       overflow-x: hidden;
     }
 
-    h1, h2, h3, h4 {
+    h1,
+    h2,
+    h3,
+    h4 {
       font-weight: 700;
       line-height: 1.3;
       margin-bottom: 1rem;
@@ -398,10 +424,10 @@
     }
 
     @media (max-width: 768px) {
-    .accordion-button {
-      padding: 1.25rem 1.5rem;
+      .accordion-button {
+        padding: 1.25rem 1.5rem;
       }
-    }   
+    }
 
     /* About */
     .about {
@@ -414,7 +440,7 @@
       gap: 3rem;
       align-items: center;
     }
-    
+
     .about-img img {
       width: 100%;
       height: auto;
@@ -468,15 +494,39 @@
       box-shadow: 0 15px 30px rgba(0, 86, 179, 0.1);
     }
 
+    .icon-bg {
+      background-color: var(--primary-light);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 1.5rem auto;
+      /* centers horizontally + spacing below */
+    }
+
+    .icon-bg img {
+      max-width: 60%;
+      max-height: 60%;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+
+    .service-card:hover .icon-bg img {
+      transform: scale(1.1);
+    }
 
     .service-icon {
-      font-size: 3.5rem; /* Larger size for visibility */
-      color: var(--primary); 
+      font-size: 3.5rem;
+      /* Larger size for visibility */
+      color: var(--primary);
       margin-bottom: 1.5rem;
       display: inline-flex;
       transition: var(--transition);
     }
-
 
     .service-card:hover .service-icon {
       transform: scale(1.1);
@@ -528,8 +578,8 @@
 
     @media (max-width: 768px) {
       .accordion-button {
-      padding: 1.25rem 1.5rem;
-     }
+        padding: 1.25rem 1.5rem;
+      }
     }
 
     /* Locations */
@@ -772,11 +822,11 @@
       .hero h1 {
         font-size: 3rem;
       }
-      
+
       .about-content {
         grid-template-columns: 1fr;
       }
-      
+
       .about-img {
         max-width: 600px;
         margin: 0 auto;
@@ -798,27 +848,27 @@
         transition: var(--transition);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       }
-      
+
       .nav-links.active {
         left: 0;
       }
-      
+
       .mobile-menu-btn {
         display: block;
       }
-      
+
       .hero {
         min-height: 600px;
       }
-      
+
       .hero h1 {
         font-size: 2.5rem;
       }
-      
+
       .hero-btns {
         flex-direction: column;
       }
-      
+
       .btn {
         width: 100%;
       }
@@ -828,11 +878,11 @@
       .section {
         padding: 4rem 0;
       }
-      
+
       .hero h1 {
         font-size: 2rem;
       }
-      
+
       .hero p {
         font-size: 1rem;
       }
@@ -841,7 +891,7 @@
 </head>
 
 <body class="loading">
-    <div class="loading-screen">
+  <div class="loading-screen">
     <div class="loading-spinner">
       <img src="favicon(spinner).webp" alt="Loading..." class="loading-icon">
     </div>
@@ -873,7 +923,8 @@
     <div class="container">
       <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
         <h1>Expert Orthopaedic Care in Durban</h1>
-        <p>Specialising in joint replacement, fracture care, and sports medicine with a patient-centred approach to treatment and recovery.</p>
+        <p>Specialising in joint replacement, fracture care, and sports medicine with a patient-centred approach to
+          treatment and recovery.</p>
         <div class="hero-btns">
           <a href="#contact" class="btn btn-primary">Book a Consultation</a>
           <a href="#services" class="btn btn-outline">Our Services</a>
@@ -891,21 +942,36 @@
         </div>
         <div class="about-text" data-aos="fade-left" data-aos-delay="200">
           <h2 class="section-title">About Dr. Hariparsad</h2>
-          <p>Dr. Rikesh Dhuneshwar Hariparsad is a distinguished orthopaedic surgeon with over 20 years of experience in musculoskeletal medicine. Born and raised in KwaZulu-Natal, he has dedicated his career to serving communities across South Africa while also gaining valuable international experience in the United Kingdom.</p>
-          
+          <p>Dr. Rikesh Dhuneshwar Hariparsad is a distinguished orthopaedic surgeon with over 20 years of experience in
+            musculoskeletal medicine. Born and raised in KwaZulu-Natal, he has dedicated his career to serving
+            communities across South Africa while also gaining valuable international experience in the United Kingdom.
+          </p>
+
           <h3 style="color: var(--primary); margin-top: 1.5rem;">Professional Journey</h3>
-          <p>After completing his medical degree at the prestigious University of KwaZulu-Natal in 2000, Dr. Hariparsad pursued specialised training in anaesthetics, earning his Diploma in Anaesthetics (DA) in 2004. This unique background provides him with exceptional insight into pain management techniques that benefit his orthopaedic patients.</p>
-          
-          <p>His passion for musculoskeletal medicine led him to specialise in orthopaedics, where he completed his Higher Diploma in Orthopaedics (H. Dip Orth) in 2011, followed by a Fellowship in Orthopaedics in 2012 from the Colleges of Medicine of South Africa.</p>
-          
+          <p>After completing his medical degree at the prestigious University of KwaZulu-Natal in 2000, Dr. Hariparsad
+            pursued specialised training in anaesthetics, earning his Diploma in Anaesthetics (DA) in 2004. This unique
+            background provides him with exceptional insight into pain management techniques that benefit his
+            orthopaedic patients.</p>
+
+          <p>His passion for musculoskeletal medicine led him to specialise in orthopaedics, where he completed his
+            Higher Diploma in Orthopaedics (H. Dip Orth) in 2011, followed by a Fellowship in Orthopaedics in 2012 from
+            the Colleges of Medicine of South Africa.</p>
+
           <h3 style="color: var(--primary); margin-top: 1.5rem;">International and National Experience</h3>
-          <p>Dr. Hariparsad has practiced extensively throughout South Africa, serving diverse communities in both urban and rural settings. His international experience includes working in the United Kingdom's National Health Service (NHS), where he gained exposure to different healthcare systems and advanced surgical techniques.</p>
-          
-          <p>This breadth of experience has not only enhanced his professional expertise but has also enriched his personal understanding of different cultures and healthcare approaches. He brings this global perspective to his practice while maintaining a deep commitment to serving the people of KwaZulu-Natal.</p>
-          
+          <p>Dr. Hariparsad has practiced extensively throughout South Africa, serving diverse communities in both urban
+            and rural settings. His international experience includes working in the United Kingdom's National Health
+            Service (NHS), where he gained exposure to different healthcare systems and advanced surgical techniques.
+          </p>
+
+          <p>This breadth of experience has not only enhanced his professional expertise but has also enriched his
+            personal understanding of different cultures and healthcare approaches. He brings this global perspective to
+            his practice while maintaining a deep commitment to serving the people of KwaZulu-Natal.</p>
+
           <h3 style="color: var(--primary); margin-top: 1.5rem;">Patient-Centred Philosophy</h3>
-          <p>Dr. Hariparsad believes in a holistic approach to orthopaedic care, combining evidence-based medicine with personalised treatment plans informed by his extensive experience. He takes time to educate patients about their conditions and involves them in decision-making about their care.</p>  
-          
+          <p>Dr. Hariparsad believes in a holistic approach to orthopaedic care, combining evidence-based medicine with
+            personalised treatment plans informed by his extensive experience. He takes time to educate patients about
+            their conditions and involves them in decision-making about their care.</p>
+
           <div class="qualifications">
             <div class="qualification-item">
               <div class="qualification-icon">
@@ -916,7 +982,7 @@
                 <p>University of KwaZulu-Natal</p>
               </div>
             </div>
-            
+
             <div class="qualification-item">
               <div class="qualification-icon">
                 <i class="bi bi-award"></i>
@@ -926,7 +992,7 @@
                 <p>Colleges of Medicine of South Africa</p>
               </div>
             </div>
-            
+
             <div class="qualification-item">
               <div class="qualification-icon">
                 <i class="bi bi-award"></i>
@@ -936,7 +1002,7 @@
                 <p>Colleges of Medicine of South Africa</p>
               </div>
             </div>
-            
+
             <div class="qualification-item">
               <div class="qualification-icon">
                 <i class="bi bi-award"></i>
@@ -959,75 +1025,78 @@
         <h2 class="section-title">Our Specialised Services</h2>
         <p>Comprehensive orthopaedic care for all your musculoskeletal needs</p>
       </div>
-      
+
       <div class="services-grid">
         <!-- Trauma & Fracture Care -->
         <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-icon">
-            <span class="material-icons">healing</span>
+          <div class="service-icon icon-bg">
+            <img src="assets/icons/fracture.png" alt="Fracture Care Icon">
           </div>
           <h3>Trauma & Fracture Care</h3>
-          <p>Expert treatment for fractures and traumatic injuries using the latest surgical and non-surgical techniques.</p>
+          <p>Expert treatment for fractures and traumatic injuries using the latest surgical and non-surgical
+            techniques.</p>
         </div>
-        
+
         <!-- Hand & Shoulder Surgery -->
         <div class="service-card" data-aos="fade-up" data-aos-delay="150">
-          <div class="service-icon">
-            <span class="material-icons">back_hand</span>
+          <div class="service-icon icon-bg">
+            <img src="assets/icons/hand.png" alt="Hand Surgery Icon">
           </div>
           <h3>Hand & Shoulder Surgery</h3>
-          <p>Specialised treatment for hand conditions including injuries, arthritis, and carpal tunnel syndrome, as well as shoulder disorders such as rotator cuff tendinitis and recurrent instability (dislocations).</p>
+          <p>Specialised treatment for hand conditions including injuries, arthritis, and carpal tunnel syndrome, as
+            well as shoulder disorders such as rotator cuff tendinitis and recurrent instability (dislocations).</p>
         </div>
-        
+
         <!-- Back Pain & Facet Injections -->
         <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-icon">
-            <span class="material-icons">elderly_woman</span>
+          <div class="service-icon icon-bg">
+            <img src="assets/icons/pain.png" alt="Back Pain Icon">
           </div>
           <h3>Back Pain & Facet Injections</h3>
           <p>Diagnosis and treatment of back pain including minimally invasive facet joint injections and rhizotomy.</p>
         </div>
-        
+
         <!-- Infection Treatment -->
         <div class="service-card" data-aos="fade-up" data-aos-delay="250">
-          <div class="service-icon">
-            <span class="material-icons">coronavirus</span>
+          <div class="service-icon icon-bg">
+            <img src="assets/icons/coronavirus.png" alt="Infection Treatment Icon">
           </div>
           <h3>Infection Treatment</h3>
           <p>Comprehensive management of bone and joint infections with advanced treatment protocols.</p>
         </div>
-        
+
         <!-- Arthroscopy -->
         <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="service-icon">
-            <span class="material-icons">medical_services</span>
+          <div class="service-icon icon-bg">
+            <img src="assets/icons/check.png" alt="Arthroscopy Icon">
           </div>
           <h3>Arthroscopy</h3>
           <p>Minimally invasive procedures for joint problems including knee, shoulder, and hip arthroscopy.</p>
         </div>
-        
+
         <!-- Sports Medicine -->
         <div class="service-card" data-aos="fade-up" data-aos-delay="350">
-          <div class="service-icon">
-            <span class="material-icons">sports_soccer</span>
+          <div class="service-icon icon-bg">
+            <img src="assets/icons/run.png" alt="Sports Medicine Icon">
           </div>
           <h3>Knee & Sports Medicine</h3>
-          <p>Specialised care for sports injuries and athletic performance optimization, with particular expertise in knee-related surgical procedures.</p>
+          <p>Specialised care for sports injuries and athletic performance optimization, with particular expertise in
+            knee-related surgical procedures.</p>
         </div>
-        
+
         <!-- Joint Replacement -->
         <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="service-icon">
-            <span class="material-icons">settings_suggest</span>
+          <div class="service-icon icon-bg">
+            <img src="assets/icons/bone.png" alt="Joint Replacement Icon">
           </div>
           <h3>Joint Replacement</h3>
           <p>Advanced hip, knee, and shoulder replacement surgeries using the latest prosthetic technology.</p>
         </div>
-        
+
         <!-- Foot & Ankle -->
         <div class="service-card" data-aos="fade-up" data-aos-delay="450">
-          <div class="service-icon">
-            <span class="material-icons">directions_walk</span>
+          <div class="service-icon icon-bg">
+            <img src="assets/icons/afo-support.png" alt="Foot and Ankle Icon">
           </div>
           <h3>Foot & Ankle</h3>
           <p>Comprehensive care for foot and ankle conditions including fractures, arthritis, and deformities.</p>
@@ -1035,6 +1104,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- FAQ Section -->
   <section id="faq" class="section">
@@ -1044,66 +1114,82 @@
         <p>Answers to some common questions about our orthopaedic practice</p>
       </div>
       <div class="accordion" id="faqAccordion">
-        
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="faqOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
               Do I need a referral to book an appointment?
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               No referral is necessary. Patients can book directly with our practice by phone or email.
             </div>
           </div>
         </div>
-        
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="faqTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               What should I bring to my consultation?
             </button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              Please bring your ID, medical aid card, any previous medical records, X-rays, MRIs, or test results relevant to your condition.
+              Please bring your ID, medical aid card, any previous medical records, X-rays, MRIs, or test results
+              relevant to your condition.
             </div>
           </div>
         </div>
-        
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="faqThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               Are all treatments surgical?
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              No. Many orthopaedic conditions can be managed non-surgically through physical therapy, medication, or injections.
+              No. Many orthopaedic conditions can be managed non-surgically through physical therapy, medication, or
+              injections.
             </div>
           </div>
         </div>
-        
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="faqFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
               How long is the typical recovery time after joint replacement surgery?
             </button>
           </h2>
-          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#faqAccordion">
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              Recovery times vary depending on the type of joint replacement (hip, knee, or shoulder) and the patient's overall health. Most patients can resume light activities within <strong>a couple of weeks</strong>, while full recovery, including strength and mobility, may take <strong>a couple of months</strong>. Physical therapy is crucial for optimal results, and Dr. Hariparsad will provide a personalised rehabilitation plan.
+              Recovery times vary depending on the type of joint replacement (hip, knee, or shoulder) and the patient's
+              overall health. Most patients can resume light activities within <strong>a couple of weeks</strong>, while
+              full recovery, including strength and mobility, may take <strong>a couple of months</strong>. Physical
+              therapy is crucial for optimal results, and Dr. Hariparsad will provide a personalised rehabilitation
+              plan.
             </div>
           </div>
         </div>
-        
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="faqFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
               What are the non-surgical treatment options for chronic joint pain?
             </button>
           </h2>
-          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive" data-bs-parent="#faqAccordion">
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               Many conditions can be managed without surgery. Treatment options include:<br><br>
               - <strong>Physical therapy</strong> (strengthening and mobility exercises)<br>
@@ -1114,31 +1200,36 @@
             </div>
           </div>
         </div>
-        
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="faqSix">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
               How do I know if my injury requires surgery?
             </button>
           </h2>
-          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix" data-bs-parent="#faqAccordion">
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               Surgery is typically considered when:<br><br>
               - Non-surgical treatments fail to relieve pain/instability<br>
               - The injury significantly impairs daily function (e.g., fractures, torn ligaments)<br>
               - Imaging (X-rays/MRIs) shows severe damage (e.g., advanced arthritis)<br><br>
-              Dr. Hariparsad will conduct a thorough assessment and discuss all options with you before recommending surgery.
+              Dr. Hariparsad will conduct a thorough assessment and discuss all options with you before recommending
+              surgery.
             </div>
           </div>
         </div>
-        
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="faqSeven">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
               What should I expect during my first consultation?
             </button>
           </h2>
-          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven" data-bs-parent="#faqAccordion">
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
               Your first visit will include:<br><br>
               1. <strong>Medical history review</strong> (previous injuries, surgeries, medications)<br>
@@ -1149,19 +1240,23 @@
             </div>
           </div>
         </div>
-        
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="faqEight">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
               Do you accept medical aid, and what are the payment options?
             </button>
           </h2>
-          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="faqEight" data-bs-parent="#faqAccordion">
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="faqEight"
+            data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              Yes, we accept most major <strong>South African medical aids</strong>. For non-covered services or self-paying patients, we offer:<br><br>
+              Yes, we accept most major <strong>South African medical aids</strong>. For non-covered services or
+              self-paying patients, we offer:<br><br>
               - <strong>Payment plans</strong> (structured instalments)<br>
               - <strong>Hospital cash-back options</strong> (if applicable)<br><br>
-              Our administrative team will assist with pre-authorisations and clarify any financial queries before treatment.
+              Our administrative team will assist with pre-authorisations and clarify any financial queries before
+              treatment.
             </div>
           </div>
         </div>
@@ -1176,45 +1271,54 @@
         <h2 class="section-title">Our Practice Locations</h2>
         <p>Conveniently located clinics serving Durban and surrounding areas</p>
       </div>
-      
+
       <div class="locations-grid">
         <div class="location-card" data-aos="fade-up" data-aos-delay="100">
           <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d31.02345678901234!3d-29.85673456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDUxJzI0LjMiUyAzMcKwMDEnMjkuNiJF!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d31.02345678901234!3d-29.85673456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDUxJzI0LjMiUyAzMcKwMDEnMjkuNiJF!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza"
+              allowfullscreen="" loading="lazy"></iframe>
           </div>
           <div class="location-info">
             <h3>Durdoc Medical Centre</h3>
             <p><i class="bi bi-geo-alt"></i> Suite 1521, 15th floor<br>460 Anton Lembede (Smith Street)<br>Durban</p>
             <p><i class="bi bi-clock"></i> By appointment</p>
-            <a href="https://www.google.com/maps/dir//460+Anton+Lembede+St,+Durban" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+            <a href="https://www.google.com/maps/dir//460+Anton+Lembede+St,+Durban" target="_blank"
+              class="btn btn-outline" style="margin-top: 1rem;">
               <i class="bi bi-geo-alt-fill"></i> Get Directions
             </a>
           </div>
         </div>
-        
+
         <div class="location-card" data-aos="fade-up" data-aos-delay="200">
           <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d31.02345678901234!3d-29.85673456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDUxJzI0LjMiUyAzMcKwMDEnMjkuNiJF!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d31.02345678901234!3d-29.85673456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDUxJzI0LjMiUyAzMcKwMDEnMjkuNiJF!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza"
+              allowfullscreen="" loading="lazy"></iframe>
           </div>
           <div class="location-info">
             <h3>Parklands Hospital</h3>
             <p><i class="bi bi-geo-alt"></i> Second Floor Sessional Rooms<br>75 Hopelands Road<br>Essenwood, Durban</p>
             <p><i class="bi bi-clock"></i> By appointment</p>
-            <a href="https://www.google.com/maps/dir//75+Hopelands+Rd,+Essenwood,+Durban" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+            <a href="https://www.google.com/maps/dir//75+Hopelands+Rd,+Essenwood,+Durban" target="_blank"
+              class="btn btn-outline" style="margin-top: 1rem;">
               <i class="bi bi-geo-alt-fill"></i> Get Directions
             </a>
           </div>
         </div>
-        
+
         <div class="location-card" data-aos="fade-up" data-aos-delay="300">
           <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d31.02345678901234!3d-29.85673456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDUxJzI0LjMiUyAzMcKwMDEnMjkuNiJF!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d31.02345678901234!3d-29.85673456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDUxJzI0LjMiUyAzMcKwMDEnMjkuNiJF!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza"
+              allowfullscreen="" loading="lazy"></iframe>
           </div>
           <div class="location-info">
-            <h3>Ascot Park | Life Entabeni Hospital</h3>
+            <h3>Ascot Park | Entabeni Hospital</h3>
             <p><i class="bi bi-geo-alt"></i> 3 Ascot Street<br>Greyville, Durban</p>
             <p><i class="bi bi-clock"></i> By appointment</p>
-            <a href="https://www.google.com/maps/dir//3+Ascot+St,+Greyville,+Durban" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+            <a href="https://www.google.com/maps/dir//3+Ascot+St,+Greyville,+Durban" target="_blank"
+              class="btn btn-outline" style="margin-top: 1rem;">
               <i class="bi bi-geo-alt-fill"></i> Get Directions
             </a>
           </div>
@@ -1222,13 +1326,16 @@
 
         <div class="location-card" data-aos="fade-up" data-aos-delay="400">
           <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d31.02345678901234!3d-29.85673456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDUxJzI0LjMiUyAzMcKwMDEnMjkuNiJF!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d31.02345678901234!3d-29.85673456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDUxJzI0LjMiUyAzMcKwMDEnMjkuNiJF!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza"
+              allowfullscreen="" loading="lazy"></iframe>
           </div>
           <div class="location-info">
             <h3>Gateway Private Hospital</h3>
             <p><i class="bi bi-geo-alt"></i> 36-38 Aurora Drive<br>Umhlanga, Durban</p>
             <p><i class="bi bi-clock"></i> By appointment</p>
-            <a href="https://www.google.com/maps/dir//36-38+Aurora+Dr,+Umhlanga,+Durban" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+            <a href="https://www.google.com/maps/dir//36-38+Aurora+Dr,+Umhlanga,+Durban" target="_blank"
+              class="btn btn-outline" style="margin-top: 1rem;">
               <i class="bi bi-geo-alt-fill"></i> Get Directions
             </a>
           </div>
@@ -1243,7 +1350,7 @@
         <h2 class="section-title">Contact Us</h2>
         <p>Get in touch to schedule an appointment or ask questions</p>
       </div>
-      
+
       <div class="contact-container">
         <div class="contact-info" data-aos="fade-right">
           <h3>Contact Information</h3>
@@ -1257,7 +1364,7 @@
                 <p><a href="mailto:ortho.gateway@gmail.com">ortho.gateway@gmail.com</a></p>
               </div>
             </div>
-            
+
             <div class="contact-item">
               <div class="contact-icon">
                 <i class="bi bi-telephone"></i>
@@ -1267,7 +1374,7 @@
                 <p><a href="tel:0315368348">031 536 8348</a></p>
               </div>
             </div>
-            
+
             <div class="contact-item">
               <div class="contact-icon">
                 <i class="bi bi-clock"></i>
@@ -1278,7 +1385,7 @@
               </div>
             </div>
           </div>
-          
+
           <h3>Follow Us</h3>
           <div class="social-links">
             <a href="https://www.facebook.com/profile.php?id=100084818524894" class="social-link" target="_blank">
@@ -1286,39 +1393,39 @@
             </a>
           </div>
         </div>
-        
+
         <div class="contact-form" data-aos="fade-left" data-aos-delay="200">
-              
-              
-<form id="contactForm" action="https://formsubmit.co/ortho.gateway@gmail.com" method="POST">
-  <div class="form-group">
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="name" class="form-control" required>
-  </div>
 
-  <div class="form-group">
-    <label for="email">Your Email</label>
-    <input type="email" id="email" name="email" class="form-control" required>
-  </div>
 
-  <div class="form-group">
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" name="phone" class="form-control" required>
-  </div>
+          <form id="contactForm" action="https://formsubmit.co/ortho.gateway@gmail.com" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
 
-  <div class="form-group">
-    <label for="message">Your Message</label>
-    <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
-  </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
 
-  <input type="text" name="_honey" style="display:none">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://docrdhariparsad.co.za/thank-you.html">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-control" required>
+            </div>
 
-  <div class="form-group">
-    <button type="submit" class="btn btn-primary form-submit">Send Message</button>
-  </div>
-</form>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+            </div>
+
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://docrdhariparsad.co.za/thank-you.html">
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+            </div>
+          </form>
 
 
           <div id="formStatus" class="form-status"></div>
@@ -1335,7 +1442,7 @@
           <h3>Dr. RD Hariparsad</h3>
           <p>Expert orthopaedic surgeon providing comprehensive musculoskeletal care in Durban, South Africa.</p>
         </div>
-        
+
         <div class="footer-col">
           <h3>Quick Links</h3>
           <ul class="footer-links">
@@ -1346,7 +1453,7 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-        
+
         <div class="footer-col">
           <h3>Services</h3>
           <ul class="footer-links">
@@ -1360,7 +1467,7 @@
             <li><a href="#services">Foot & Ankle</a></li>
           </ul>
         </div>
-        
+
         <div class="footer-col">
           <h3>Contact</h3>
           <ul class="footer-links">
@@ -1370,106 +1477,111 @@
           </ul>
         </div>
       </div>
-      
+
       <div class="footer-bottom">
         <p>&copy; 2025 Dr. RD Hariparsad. All Rights Reserved.</p>
         <p style="color: var(--gray); font-size: 0.9rem;">
-          Powered by <a href=https://spectrastudios.co.za/ target="_blank" style="color: var(--primary); font-weight: 500; text-decoration: underline;">Spectra Studios</a>
+          Powered by <a href=https://spectrastudios.co.za/ target="_blank"
+            style="color: var(--primary); font-weight: 500; text-decoration: underline;">Spectra Studios</a>
+        </p>
+        <p style="color: var(--gray); font-size: 0.9rem;">
+          Icon assets by <a href="https://www.flaticon.com" target="_blank"
+            style="color: var(--primary); font-weight: 500; text-decoration: underline;">Flaticon</a>
         </p>
       </div>
     </div>
 
-  <!-- Back to Top Button -->
-  <a href="#" class="back-to-top">
-    <i class="bi bi-arrow-up"></i>
-  </a>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    // Initialize AOS animations
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true
-    });
-
-    // Mobile menu toggle
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const navLinks = document.querySelector('.nav-links');
-    
-    mobileMenuBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
-        ? '<i class="bi bi-x-lg"></i>' 
-        : '<i class="bi bi-list"></i>';
-    });
-
-    // Close mobile menu when clicking a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        mobileMenuBtn.innerHTML = '<i class="bi bi-list"></i>';
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      // Initialize AOS animations
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
       });
-    });
 
-    // Header scroll effect
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
+      // Mobile menu toggle
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const navLinks = document.querySelector('.nav-links');
 
-    // Back to top button
-    const backToTop = document.querySelector('.back-to-top');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        backToTop.classList.add('active');
-      } else {
-        backToTop.classList.remove('active');
-      }
-    });
+      mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        mobileMenuBtn.innerHTML = navLinks.classList.contains('active')
+          ? '<i class="bi bi-x-lg"></i>'
+          : '<i class="bi bi-list"></i>';
+      });
 
-    // Contact form submission
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      const status = document.getElementById('formStatus');
-      
-      if (!name || !email || !message) {
-        status.textContent = 'Please fill in all required fields.';
-        status.className = 'form-status error';
-        return;
-      }
-      
-      status.textContent = 'Thank you for your message. We will get back to you shortly.';
-      status.className = 'form-status success';
-      this.reset();
-      
-      // Hide the status message after 5 seconds
-      setTimeout(() => {
-        status.textContent = '';
-        status.className = 'form-status';
-      }, 5000);
-    });
+      // Close mobile menu when clicking a link
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          mobileMenuBtn.innerHTML = '<i class="bi bi-list"></i>';
+        });
+      });
 
-    window.addEventListener('load', function() {
-      // Add 'loading' class to body to prevent scrolling
-      document.body.classList.add('loading');
-      
-      setTimeout(function() {
-        document.querySelector('.loading-screen').classList.add('loaded');
-        // Remove 'loading' class after animation completes
-        setTimeout(function() {
-          document.body.classList.remove('loading');
+      // Header scroll effect
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // Back to top button
+      const backToTop = document.querySelector('.back-to-top');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          backToTop.classList.add('active');
+        } else {
+          backToTop.classList.remove('active');
+        }
+      });
+
+      // Contact form submission
+      document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const status = document.getElementById('formStatus');
+
+        if (!name || !email || !message) {
+          status.textContent = 'Please fill in all required fields.';
+          status.className = 'form-status error';
+          return;
+        }
+
+        status.textContent = 'Thank you for your message. We will get back to you shortly.';
+        status.className = 'form-status success';
+        this.reset();
+
+        // Hide the status message after 5 seconds
+        setTimeout(() => {
+          status.textContent = '';
+          status.className = 'form-status';
+        }, 5000);
+      });
+
+      window.addEventListener('load', function () {
+        // Add 'loading' class to body to prevent scrolling
+        document.body.classList.add('loading');
+
+        setTimeout(function () {
+          document.querySelector('.loading-screen').classList.add('loaded');
+          // Remove 'loading' class after animation completes
+          setTimeout(function () {
+            document.body.classList.remove('loading');
+          }, 500);
         }, 500);
-      }, 500); 
-    });
-  </script>
+      });
+    </script>
 </body>
 </html>
