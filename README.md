@@ -32,9 +32,10 @@ For full functionality, you'll need these image files in the same directory:
 - `dr_hariparsad_logo.jpg` (Practice logo)
 - `dr_hariparsad_portrait.png` (Doctor's profile image)
 - `hero.jpeg` (Hero section background)
-- `favicon.jpeg` (Browser tab icon)
+- `asset/icons` (Folder containing service icons)
+- `favicon_new.png` (Browser tab icon)
 - `favicon(spinner).jpeg` (Loading spinner image)
-
+  
 ## Deployment
 The website can be deployed to any standard web hosting service. For optimal performance, consider:
 - Using a CDN for global content delivery
