@@ -1411,9 +1411,12 @@
         </div>
 
         <div class="contact-form" data-aos="fade-left" data-aos-delay="200">
-
-
           <form id="contactForm" action="https://formsubmit.co/ortho.gateway@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Contact Form Submission">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://docrdhariparsad.co.za/thank-you.html">
+
             <div class="form-group">
               <label for="name">Your Name</label>
               <input type="text" id="name" name="name" class="form-control" required>
@@ -1434,19 +1437,16 @@
               <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
             </div>
 
-            <input type="text" name="_honey" style="display:none">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://docrdhariparsad.co.za/thank-you.html">
-
             <div class="form-group">
               <button type="submit" class="btn btn-primary form-submit">Send Message</button>
             </div>
           </form>
-
-
-          <div id="formStatus" class="form-status"></div>
         </div>
+
+
+        <div id="formStatus" class="form-status"></div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -1555,31 +1555,6 @@
         } else {
           backToTop.classList.remove('active');
         }
-      });
-
-      // Contact form submission
-      document.getElementById('contactForm').addEventListener('submit', function (e) {
-        e.preventDefault();
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
-        const status = document.getElementById('formStatus');
-
-        if (!name || !email || !message) {
-          status.textContent = 'Please fill in all required fields.';
-          status.className = 'form-status error';
-          return;
-        }
-
-        status.textContent = 'Thank you for your message. We will get back to you shortly.';
-        status.className = 'form-status success';
-        this.reset();
-
-        // Hide the status message after 5 seconds
-        setTimeout(() => {
-          status.textContent = '';
-          status.className = 'form-status';
-        }, 5000);
       });
 
       window.addEventListener('load', function () {
