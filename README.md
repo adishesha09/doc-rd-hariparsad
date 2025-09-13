@@ -1,6 +1,6 @@
 # Dr. RD Hariparsad - Orthopaedic Surgeon Website
 
-![Website Preview](dr_hariparsad_logo.jpg)
+![Website Preview](assets/imgs/dr_hariparsad_logo.jpg)
 
 ## Overview
 This is the official website for Dr. RD Hariparsad, a distinguished orthopaedic surgeon based in Durban, South Africa. The website showcases Dr. Hariparsad's professional services, qualifications, practice locations, and provides a platform for patients to get in touch.
