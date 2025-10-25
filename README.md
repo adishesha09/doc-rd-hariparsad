@@ -5,52 +5,90 @@
 ## Overview
 This is the official website for Dr. RD Hariparsad, a distinguished orthopaedic surgeon based in Durban, South Africa. The website showcases Dr. Hariparsad's professional services, qualifications, practice locations, and provides a platform for patients to get in touch.
 
+## Repository Structure
+```
+├── index.html              # Main website page
+├── thank-you.html         # Form submission confirmation page
+├── CNAME                  # Custom domain configuration
+├── robots.txt            # Search engine crawling rules
+├── sitemap.xml          # Site structure for search engines
+├── README.md            # Project documentation
+├── .github/
+│   └── workflows/      # GitHub Actions deployment configuration
+│       └── static.yml
+├── assets/
+│   ├── icons/         # Service and UI icons
+│   └── imgs/         # Website images and logos
+└── css/
+    └── style.css    # Main stylesheet
+```
+
 ## Features
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop devices
-- **Modern UI**: Clean, professional interface with smooth animations
-- **Key Sections**:
-  - About Dr. Hariparsad with professional biography
-  - Comprehensive services offered
-  - FAQ section for common patient questions
-  - Practice locations with interactive maps
-  - Contact form and information
-- **Performance Optimized**: Fast loading times with lazy loading for images
-- **SEO Friendly**: Proper meta tags, structured data, and semantic HTML
+- **Responsive Design**: Mobile-first approach with adaptive layouts
+- **Modern UI Components**:
+  - Sticky navigation header
+  - Animated hero section
+  - Service cards with hover effects
+  - Collapsible FAQ accordion
+  - Interactive location maps
+  - Contact form with FormSubmit integration
+- **Performance Optimized**:
+  - Loading animation
+  - Lazy-loaded images
+  - AOS scroll animations
+  - Minified assets
+- **SEO Implementation**:
+  - Structured data (JSON-LD)
+  - Meta tags optimization
+  - XML sitemap
+  - Robots.txt configuration
+  - Custom domain setup
 
 ## Technologies Used
-- HTML5, CSS3, JavaScript
-- [Bootstrap Icons](https://icons.getbootstrap.com/)
-- [Google Fonts](https://fonts.google.com/) (Poppins)
-- [AOS Library](https://michalsnik.github.io/aos/) for scroll animations
-- Responsive design with CSS Grid and Flexbox
+- HTML5 & CSS3
+- Vanilla JavaScript
+- External Libraries:
+  - Bootstrap Icons 1.11.3
+  - Font Awesome 6.0.0
+  - Google Fonts (Poppins)
+  - AOS 2.3.4 for animations
+- GitHub Pages for hosting
+- GitHub Actions for deployment
 
-## Setup
-No special setup is required as this is a static website. Simply deploy the `index.html` file along with the associated assets (images, etc.) to any web hosting service.
+## Development Setup
+1. Clone the repository
+2. No build process required - static HTML/CSS/JS
+3. Open `index.html` in a browser to view locally
 
-## Assets Required
-For full functionality, you'll need these image files in the same directory:
-- `dr_hariparsad_logo.jpg` (Practice logo)
-- `dr_hariparsad_portrait.png` (Doctor's profile image)
-- `hero.jpeg` (Hero section background)
-- `asset/icons` (Folder containing service icons)
-- `favicon_new.png` (Browser tab icon)
-- `favicon(spinner).jpeg` (Loading spinner image)
-  
 ## Deployment
-The website can be deployed to any standard web hosting service. For optimal performance, consider:
-- Using a CDN for global content delivery
-- Enabling GZIP compression
-- Implementing browser caching
+The site is automatically deployed to GitHub Pages using GitHub Actions workflow:
+- Pushes to `main` branch trigger deployment
+- Configuration in `.github/workflows/static.yml`
+- Custom domain setup via `CNAME` file
 
-## Maintenance
-To update content:
-1. Edit the `index.html` file directly
-2. Update any images by replacing the files (keep the same names)
-3. For major changes, consider version control
+## SEO Configuration
+- `robots.txt` allows all crawlers
+- `sitemap.xml` includes all major sections
+- Structured data for medical practice
+- Meta tags optimized for medical services
+
+## Contact Form Integration
+- Uses FormSubmit service
+- Redirects to `thank-you.html` on submission
+- Sends notifications to ortho.gateway@gmail.com
+
+## Browser Support
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers
 
 ## Credits
-- Website developed by [Spectra Studios](https://spectrastudios.co.za)
-- Icons by [Flaticon](https://www.flaticon.com/)
+- Development: [Spectra Studios](https://spectrastudios.co.za)
+- Icons: [Flaticon](https://www.flaticon.com/)
+- Photos: Licensed to Dr. RD Hariparsad
 
 ## License
-This website is the property of Dr. RD Hariparsad and Spectra Studios. All content is copyrighted.
+© 2025 Dr. RD Hariparsad. All rights reserved.
+Website developed and maintained by Spectra Studios.
