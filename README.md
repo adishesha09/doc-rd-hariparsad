@@ -7,20 +7,28 @@ This is the official website for Dr. RD Hariparsad, a distinguished orthopaedic 
 
 ## Repository Structure
 ```
-├── index.html              # Main website page
-├── thank-you.html         # Form submission confirmation page
-├── CNAME                  # Custom domain configuration
-├── robots.txt            # Search engine crawling rules
-├── sitemap.xml          # Site structure for search engines
-├── README.md            # Project documentation
+├── index.html               # Main website page
+├── thank-you.html           # Form submission confirmation page
+├── CNAME                    # Custom domain configuration
+├── robots.txt               # Search engine crawling rules
+├── sitemap.xml              # Site structure for search engines
+├── README.md                # Project documentation
+│
 ├── .github/
-│   └── workflows/      # GitHub Actions deployment configuration
+│   └── workflows/           # GitHub Actions deployment configuration
 │       └── static.yml
-├── assets/
-│   ├── icons/         # Service and UI icons
-│   └── imgs/         # Website images and logos
-└── css/
-    └── style.css    # Main stylesheet
+│
+└── assets/
+    ├── css/                 # Stylesheets
+    │   └── styles.css       # Main stylesheet
+    │
+    ├── js/                  # JavaScript files
+    │   └── script.js        # Main site script
+    │
+    ├── icons/               # Service and UI icons
+    │
+    └── imgs/                # Website images and logos
+
 ```
 
 ## Features
